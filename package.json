@@ -1,5 +1,5 @@
 {
-  "name": "-historic-eureka-inn",
+  "name": "historic-eureka-inn",
   "description": "A historic landmark just went digital.",
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
@@ -10,6 +10,7 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
+    "node-sass": "^3.4.2",
     "rupture": "0.6.x",
     "stylus": "0.52.x"
   }
