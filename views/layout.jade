@@ -1,17 +1,23 @@
+- var company = "Historic Eureka Inn"
+- var description = "The Eureka Inn is the only historic hotel in Tennessee’s oldest town, carefully restored and unobtrusively updated with all of the essential modern amenities."
+- var keywords = "Eureka Inn Jonesborough Jonesboro Hotel Historic History"
+
 doctype html
-html
+html(lang='en')
+  //- Moved HEAD to bottom to accomodate page-specific variables (titles)
+  include shared/head
 
-  head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='description of your site')
-    meta(name='author', content= "author of the site")
-    //- uncomment if your site is responsive!
-    //- meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= _path
-    != css()
+  body.font-reg-l.show-editor-hovered(data-spy='scroll', data-target='.navbar')
+    .page-loader.align-center.bg-white(style='display: none;')
+      .valigner
+        .v-middle
+          .la-ball-clip-rotate.fg-primary.hcenter
+            div
+    #page-wrapper.page-wrapper(data-editmode='false')
 
-  body
-    block content
+      include shared/nav
+      block content
+      include shared/footer
 
-    != js()
+    include shared/scripts
+

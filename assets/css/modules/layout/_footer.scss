@@ -3,17 +3,22 @@
 .footer {
   font-size: 0.8em;
   position: relative;
-  
+
+  .footer-logo .logo {
+    height: 126px;
+    width: auto;
+  }
+
   h5 {
     font-size: 1em;
     margin:0 0 1.5em 0;
   }
-  
+
   p {
     line-height:1.7em;
     margin-bottom: 1em;
   }
-  
+
   .scroll-up {
     @include fixed-icon(round, 50px);
     position:absolute;
@@ -25,12 +30,12 @@
     border:1px solid #fff;
     z-index: $z-controls;
   }
-  
+
   > .container {
     padding-top:80px;
     padding-bottom:80px;
   }
-  
+
   .footer-bottom {
     border-top: 1px solid rgba(#000, 0.05);
 
@@ -38,7 +43,7 @@
       line-height: 60px;
     }
   }
-  
+
   .social-links {
     font-size:1.2em;
   }
@@ -52,7 +57,7 @@
   > li {
     padding:10px 30px;
   }
-  
+
   @media (max-width:767px) {
     width:auto;
     max-width: 300px;
@@ -63,7 +68,7 @@
   .footer-bottom {
     border-top: 1px solid rgba(#fff, 0.05);
   }
-  
+
   h5 {
     color: #fff;
   }

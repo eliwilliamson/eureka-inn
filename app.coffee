@@ -1,9 +1,9 @@
-axis         = require 'axis'
-rupture      = require 'rupture'
-sass         = require 'node-sass'
-autoprefixer = require 'autoprefixer-stylus'
-js_pipeline  = require 'js-pipeline'
-css_pipeline = require 'css-pipeline'
+axis            = require 'axis'
+rupture         = require 'rupture'
+sass            = require 'node-sass'
+autoprefixer    = require 'autoprefixer-stylus'
+js_pipeline     = require 'js-pipeline'
+css_pipeline    = require 'css-pipeline'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
