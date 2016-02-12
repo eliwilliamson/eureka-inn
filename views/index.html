@@ -1,520 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Torus: Agency Landing Page</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/css/main.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Home Page</title>
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="/css/main.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
     <script src="/js/respond.min.js"></script>
     <![endif]-->
-
-  </head>
-
-  <body class="font-reg-l" data-spy="scroll" data-target=".navbar">
-
-    <!-- Page Loading Anim -->
-    <div class="page-loader align-center bg-white">
-      <div class="valigner">
-        <div class="v-middle">
-          <!-- Ball clip rotate  -->
-          <div class="la-ball-clip-rotate fg-primary hcenter">
-              <div></div>
-          </div>
-          <!-- Ball clip rotate -->
+</head>
+<body class="font-reg-l show-editor-hovered" data-spy="scroll" data-target=".navbar">
+<!-- Page Loading Anim -->
+<div style="display: none;" class="page-loader align-center bg-white">
+  <div class="valigner">
+    <div class="v-middle">
+      <!-- Ball clip rotate  -->
+      <div class="la-ball-clip-rotate fg-primary hcenter">
+        <div>
         </div>
       </div>
+      <!-- Ball clip rotate -->
     </div>
-    <!-- /Page Loading Anim -->
-
-    <!-- Page Wrapper -->
-    <div id="page-wrapper" class="page-wrapper" data-editmode="false">
-
-      <!-- Nav Block -->
-      <nav id="nav-main" class="block navbar navbar-fixed navbar-main inverse" data-categ="navbar" data-navbar="sticky" data-edit="false" data-del="inverse" data-add="bg-white border-b">
-
-        <!-- Container -->
-        <div class="container">
-
-          <!-- Header-->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <i class="ti-menu"></i>
-            </button>
-            <a class="navbar-brand font-cond-b lts-md" href="#home" data-edit="false" data-editor="field" data-field="href[Brand Link]"><i class="brand-icon et-target fg-accent" data-field="class[Brand Icon Class,icon]"></i><span data-field="html[Brand Text]">TORUS</span></a>
+  </div>
+</div>
+<!-- /Page Loading Anim -->
+<!-- Page Wrapper -->
+<div id="page-wrapper" class="page-wrapper" data-editmode="false">
+  <!-- Start #navigation -->
+  <nav id="navigation" class="block navbar navbar-fixed navbar-main inverse" data-categ="navbar" data-navbar="sticky" data-edit="false" data-del="inverse" data-add="bg-white border-b">
+  <!-- Container -->
+  <div class="container">
+    <!-- Header-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="ti-menu"></i>
+      </button>
+      <a class="navbar-brand font-cond-b lts-md" href="#home" data-edit="false" data-editor="field" data-field="href[Brand Link]"><i class="brand-icon et-target fg-accent" data-field="class[Brand Icon Class,icon]"></i><span data-field="html[Brand Text]">TORUS</span></a>
+    </div>
+    <!-- /Header -->
+    <!-- Collapse-->
+    <div class="collapse navbar-collapse">
+      <!-- New Menu Link (Delete this when finished bulding) -->
+      <a class="navbar-toggle-link navbar-right case-u" href="#contact" data-hidden="true" data-editor="menu-new" data-menu="#navbar-nav-main">+ New</a>
+      <!-- /New Menu Link -->
+      <a class="navbar-right navbar-toggle-link hidden-xs" href="#" data-toggle-nav="#navbar-nav-main"><i class="ti-menu fs-150"></i></a>
+      <ul id="navbar-nav-main" class="nav navbar-nav navbar-right case-u font-reg-mb lts-md hide-nav" data-menu-attr="data-scroll='false' data-editor='menu' data-edit='true'">
+        <li><a href="/about.html" data-scroll="true" data-edit="false" data-editor="menu" data-deletable="true">About</a></li>
+        <li><a href="/weddings-events.html" data-scroll="true" data-edit="false" data-editor="menu">Weddings &amp; Events</a></li>
+        <li><a href="/blog.html" data-scroll="true" data-edit="false" data-editor="menu">Blog</a></li>
+        <li><a href="/contact.html" data-scroll="true" data-edit="false" data-editor="menu">Contact</a></li>
+        <li><a href="https://clients.innroad.com/hei/property.aspx" data-scroll="true" data-edit="false" data-editor="menu">Book Now!</a></li>
+      </ul>
+    </div>
+    <!-- /Collapse -->
+  </div>
+  <!-- /Container -->
+  </nav>
+  <!-- /End #navigation -->
+  <!-- Start #home-hero -->
+  <header id="home-hero" class="block cover-6 bg-fixed overlay-black-70pc inverse-all" data-edit="false">
+  <!-- Container -->
+  <div class="container container-main align-center auto-invert pady-150 pady-100-xs">
+    <h1 class="case-u font-reg-l fs-400 fs-300-xs fg-text-d lts-sm" contenteditable="false">Eureka Inn</h1>
+    <p class="case-u font-cond lts-xl fg-text mgb-50" contenteditable="false">
+      Jonesborough, tn<br>
+    </p>
+    <a class="btn btn-cta btn-accent case-u lts-sm" href="https://clients.innroad.com/hei/property.aspx" data-scroll="true" data-edit="false" data-editor="field" data-field="href[Button Link]">book now!</a>
+  </div>
+  <!-- /Container -->
+  </header>
+  <!-- /End #home-hero -->
+  <!-- Start #history -->
+  <div id="history" class="block split-block bg-black-5" data-edit="false">
+    <!-- Left Block -->
+    <div class="sblock sblock-left bg-cover hidden-xs" style="background:url(/images/covers/cover8.jpg)center center" data-edit="false" data-editor="field" data-field="style[Background Style]">
+    </div>
+    <!-- /Left Block -->
+    <!-- Right Block -->
+    <div class="sblock sblock-right padx-50 pady-100">
+      <!-- Slider -->
+      <div class="bx-pager-round bx-pager-below auto-invert">
+        <ul bxindex="0" class="bxslider" data-call="bxslider" data-edit="false" data-editor="bxslider" data-bxinit="false" data-options="{controls:false, slides:1}">
+          <li class="">
+          <!-- Testimonial -->
+          <div class="align-center">
+            <i class="icon et-lock fg-accent fs-400" data-edit="false" data-editor="icon"></i>
+            <h2 class="font-cond-mb fg-text-d mgb-5" contenteditable="false">Fire Proof<br>
+            </h2>
+            <h5 class="font-cond fg-text-l lts-sm case-u fs-80" contenteditable="false">Fun fact #357<br>
+            </h5>
+            <p class="font-cond-l fg-text no-mg fs-130" contenteditable="false">
+              The Historic Eureka Inn is one of the only original wooden structures still standing because most of the homes/businesses burned down in the fires of the late 1890s.
+            </p>
           </div>
-          <!-- /Header -->
-
-          <!-- Collapse-->
-          <div class="collapse navbar-collapse">
-            <!-- New Menu Link (Delete this when finished bulding) -->
-            <a class="navbar-toggle-link navbar-right case-u" href="#contact" data-hidden="true" data-editor="menu-new" data-menu="#navbar-nav-main">+ New</a>
-            <!-- /New Menu Link -->
-
-            <a class="navbar-right navbar-toggle-link hidden-xs" href="#" data-toggle-nav="#navbar-nav-main"><i class="ti-menu fs-150"></i></a>
-
-            <ul id="navbar-nav-main" class="nav hide-nav navbar-nav navbar-right case-u font-reg-mb lts-md" data-menu-attr="data-scroll='false' data-editor='menu' data-edit='true'">
-              <li><a href="#home" data-scroll="true" data-edit="false" data-editor="menu" data-deletable="true">Home</a></li>
-              <li><a href="#about" data-scroll="true" data-edit="false" data-editor="menu">about</a></li>
-              <li><a href="#services" data-scroll="true" data-edit="false" data-editor="menu">services</a></li>
-              <li><a href="#stats" data-scroll="true" data-edit="false" data-editor="menu">stats</a></li>
-              <li><a href="#plans" data-scroll="true" data-edit="false" data-editor="menu">plans</a></li>
-              <li><a href="#contact" data-scroll="true" data-edit="false" data-editor="menu">contact</a></li>
-              <li><a href="#reviews" data-scroll="true" data-edit="false" data-editor="menu">reviews</a></li>
-            </ul>
+          <!-- /Testimonial -->
+          </li>
+          <li class="">
+          <!-- Testimonial -->
+          <div class="align-center">
+            <i class="icon et-flag fg-accent fs-400" data-edit="false" data-editor="icon"></i>
+            <h2 class="font-cond-mb fg-text-d mgb-5" contenteditable="false">One Of The First<br>
+            </h2>
+            <h5 class="font-cond fg-text-l lts-sm case-u fs-80" contenteditable="false">Fun Fact #168<br>
+            </h5>
+            <p class="font-cond-l fg-text no-mg fs-130" contenteditable="false">
+              The Historic Eureka Inn was one of the first lots purchased once Tennessee became a state in 1796.
+            </p>
           </div>
-          <!-- /Collapse -->
-
-        </div>
-        <!-- /Container -->
-
-      </nav>
-      <!-- /Nav Block -->
-
-      <!-- Header -->
-      <header id="home" class="block cover-6 bg-fixed overlay-black-70pc inverse-all" data-edit="false">
-
-        <!-- Container -->
-        <div class="container container-main align-center auto-invert pady-150 pady-100-xs">
-          <h1 contenteditable="false" class="case-u font-reg-l fs-400 fs-300-xs fg-text-d lts-sm">the masters of<br/>awesome web design</h1>
-          <p contenteditable="false" class="case-u font-cond lts-xl fg-text mgb-50">we are a creative studio from london uk</p>
-          <a class="btn btn-cta btn-accent case-u lts-sm" href="#about" data-scroll="true" data-edit="false" data-editor="field" data-field="href[Button Link]">get started</a>
-        </div>
-        <!-- /Container -->
-
-      </header>
-      <!-- /Header -->
-
-      <!-- About Block -->
-      <div id="about" class="block split-block border-b" data-edit="false">
-
-        <!-- Container -->
-        <div class="container pady-block-lg">
-
-          <!-- Row -->
-          <div class="row row-table">
-
-            <!-- Col -->
-            <div class="col-sm-6 align-center v-middle mgb-30-xs">
-
-              <img src="/images/group-selfie.png" class="lyt-iblock max-w"  alt="" title="image" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"/>
-
-            </div>
-            <!-- /Col -->
-
-            <!-- Col -->
-            <div class="col-sm-6 v-middle align-center-xs">
-
-              <div class="mgb-30 auto-invert line-b align-center-xs">
-                <h4 class="font-cond-l fg-accent lts-md mgb-5" contenteditable="false">Just what are we about?</h4>
-                <h2 class="font-cond-b fg-text-d lts-md" contenteditable="false">We Create Digital Art</h2>
-              </div>
-
-              <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-
-              <a class="btn btn-sm btn-primary btn-inflate case-u lts-md auto-invert" href="#services" data-scroll="true" data-edit="false" data-editor="field" data-field="href[Button url]"><span data-field="html[Button Text]">learn more</span><i class="icon-right ti-angle-right" data-field="class[Icon Class,icon]"></i></a>
-
-            </div>
-            <!-- /Col -->
-
+          <!-- /Testimonial -->
+          </li>
+          <li class="active">
+          <!-- Testimonial -->
+          <div class="align-center">
+            <i class="icon et-hourglass fg-accent fs-400" data-edit="false" data-editor="icon"></i>
+            <h2 class="font-cond-mb fg-text-d mgb-5" contenteditable="false">Preserved Originality<br>
+            </h2>
+            <h5 class="font-cond fg-text-l lts-sm case-u fs-80" contenteditable="false">Fun Fact #294<br>
+            </h5>
+            <p class="font-cond-l fg-text no-mg fs-130" contenteditable="false">
+              Despite fires and renovations, the Historic Eureka Inn still has the original hardwood floors from 1797.
+            </p>
           </div>
-          <!-- /Row -->
-
-        </div>
-        <!-- /Container -->
-
+          <!-- /Testimonial -->
+          </li>
+        </ul>
       </div>
-      <!-- /About Block -->
-
-      <!-- Services Block -->
-      <div id="services" class="block white-bg border-b" data-edit="false">
-
-        <!-- Container -->
-        <div class="container pady-block-lg auto-invert">
-
-          <!-- Title -->
-          <div class="section-title auto-invert line-b align-center">
-            <h2 class="font-cond-b fg-text-d lts-sm" contenteditable="false">Services We Offer</h2>
-            <p class="font-cond-l lts-sm fg-text" contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-          </div>
-          <!-- /Title -->
-
-          <!-- Row -->
-          <div class="row">
-
-            <!-- Hash List -->
-            <ul class="hash-list cols-3 cols-2-xs padx-30-all pady-40-all pad-20-all-xs clearfix align-center">
-              <li>
-                <i class="icon fg-text-l et-desktop fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">alpha Feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-              <li>
-                <i class="icon fg-text-l et-camera fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">beta feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-              <li>
-                <i class="icon fg-text-l et-layers fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">gamma feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-              <li>
-                <i class="icon fg-text-l et-printer fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">epsilon feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-              <li>
-                <i class="icon fg-text-l et-global fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">delta feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-              <li>
-                <i class="icon fg-text-l et-chat fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-                <h5 class="fg-text-d case-u lts-md font-cond-b" contenteditable="false">zeta feature</h5>
-                <p contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
-              </li>
-            </ul>
-            <!-- /Hash List -->
-
-          </div>
-          <!-- /Row -->
-
-        </div>
-        <!-- /Container -->
-
+      <!-- /Slider -->
+    </div>
+    <!-- /Right Block -->
+  </div>
+  <!-- /End #history -->
+  <!-- Start #testimonials -->
+  <div id="testimonials" class="block white-bg align-center" data-edit="false">
+    <!-- Container -->
+    <div class="container container-main auto-invert pady-block-lg">
+      <!-- Title -->
+      <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">Don't just take our word for it,<br>
+        </h4>
+        <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read What Other Travelers Are Saying!<br>
+        </h1>
       </div>
-      <!-- /Services Block -->
-
-      <!-- Stats Block -->
-      <div id="stats" class="block cover-6 bg-fixed overlay-black-70pc inverse-all" data-edit="false">
-
-        <!-- Container -->
-        <div class="container container-main auto-invert pady-block-lg align-center">
-
-          <!-- Hash List -->
-          <ul class="hash-list cols-4 cols-2-xs pad-30-all clearfix">
-            <li>
-              <i class="icon fg-text-l et-desktop fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-              <h3 class="fg-text-d case-u font-cond-b lts-sm" contenteditable="false">550k</h3>
-              <small class="case-u lts-sm" contenteditable="false">active installs</small>
-            </li>
-            <li>
-              <i class="icon fg-text-l et-profile-female fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-              <h3 class="fg-text-d case-u font-cond-b lts-sm" contenteditable="false">1650</h3>
-              <small class="case-u lts-sm" contenteditable="false">happy clients</small>
-            </li>
-            <li>
-              <i class="icon fg-text-l et-trophy fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-              <h3 class="fg-text-d case-u font-cond-b lts-sm" contenteditable="false">2015</h3>
-              <small class="case-u lts-sm" contenteditable="false">design nominee</small>
-            </li>
-            <li>
-              <i class="icon fg-text-l et-chat fs-300 mgb-20" data-edit="false" data-editor="icon"></i>
-              <h3 class="fg-text-d case-u font-cond-b lts-sm" contenteditable="false">650m</h3>
-              <small class="case-u lts-sm" contenteditable="false">social likes</small>
-            </li>
+      <!-- /Title -->
+      <!-- Hash List -->
+      <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+        <li>
+        <img src="/images/face1.jpg" class="wpx-100 img-round mgb-20" title="Satisfied Customer" alt="Satisfied Customer" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">
+          <span style="color: rgb(98, 98, 98); font-family: 'Roboto Condensed'; font-size: 15.4px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 26.18px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">"This place is amazing on several counts. It has a long and storied history and has been updated very tastefully with period pieces, fabrics, and floor coverings. One senses history on arrival. If you like feeling like you have stepped back in time, you will thoroughly enjoy this Inn. T</span><span style="box-sizing: border-box; color: rgb(98, 98, 98); font-family: 'Roboto Condensed'; font-size: 15.4px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 1.7; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">he Innkeepers and staff welcome you as though you are long lost family or friends. If you are a green living advocate, the Inn is committed to green products, healthy food choices, and cleaning procedures."</span>
+        </p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Woody Johnson<br>
+        </h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Knoxville, TN</small>
+        </li>
+        <li>
+        <img src="/images/face2.jpg" class="wpx-100 img-round mgb-20" title="Satisfied Customer" alt="Satisfied Customer" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">
+          <span style="color: rgb(98, 98, 98); font-family: 'Roboto Condensed'; font-size: 15.4px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 26.18px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">"This place. This place is quite possibly my new favorite place to stay in the mountains. Blake and Katelyn, our hosts', made us feel like we were treasured friends come to stay the weekend. These two know a few things about being ambassadors. The back gardens were lovely, and the back porch overlooking them was the perfect place for Saturday morning breakfast. Seriously ~ every single thing was exactly as it should be. Very much looking forward to our return trip in the fall."</span>
+        </p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Lisa Stansell<br>
+        </h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Lewisburg, WV</small>
+        </li>
+        <li>
+        <img src="/images/face3.jpg" class="wpx-100 img-round mgb-20" title="Satisfied Customer" alt="Satisfied Customer" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+        <p class="fs-110 font-cond-l" contenteditable="false">
+          <span style="color: rgb(98, 98, 98); font-family: 'Roboto Condensed'; font-size: 15.4px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 26.18px; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">"The Historic Eureka Inn is so very beautiful. It's extremely well kept, very very clean. We stayed in the Maxwell Room on the second floor overlooking the front porch with all it's rocking chairs, and gorgeous views of downtown. Katelyn and Blake were amazing. They called ahead and had our tickets purchased in advance for an evening play right next door at The Jonesborough Repertory Theater. The morning breakfast was so&nbsp;</span><span style="box-sizing: border-box; color: rgb(98, 98, 98); font-family: 'Roboto Condensed'; font-size: 15.4px; font-style: normal; font-variant: normal; font-weight: 300; letter-spacing: normal; line-height: 1.7; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">delicious. We hope to return very soon!"</span>
+        </p>
+        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Stacy Parton<br>
+        </h5>
+        <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Dandridge, Tx</small>
+        </li>
+      </ul>
+      <!-- /Hash List -->
+    </div>
+    <!-- /Container -->
+  </div>
+  <!-- /End #testimonials -->
+  <!-- Start #footer -->
+  <div data-edit="false" id="footer" class="block bg-primary-d inverse-all">
+    <!-- Container -->
+    <div class="container auto-invert pady-60">
+      <!-- Row -->
+      <div class="row row-table bdb-all pady-30-all-xs align-center-xs">
+        <!-- Col -->
+        <div class="col-sm-3 align-center col-vmid bd-b-xs">
+          <a class="fg-text-d font-cond-b lts-md fs-250 lyt-block" href="#home" data-edit="false" data-editor="field" data-field="href[Brand Link]">
+          <i class="et-target fg-accent mgb-10 lyt-block" data-field="class[Brand Icon Class,icon]"></i>
+          <span data-field="html[Brand Text]">TORUS</span>
+          </a>
+        </div>
+        <!-- Col -->
+        <!-- Col -->
+        <div class="col-sm-6 col-vtop bd-b-xs">
+          <h5 class="fg-text-d font-cond lts-md mgb-10 case-u" contenteditable="false">Serving travelers since 1797<br>
+          </h5>
+          <p class="fg-text-l font-cond-l" contenteditable="false">
+            The Eureka Inn is the only historic hotel in Tennessee’s oldest town, carefully restored and unobtrusively updated with all of the essential modern amenities.
+          </p>
+          <ul id="social-links" class="hlinks hlinks-icons color-icons-bg-hovered s-200" data-icon-title="true" data-menu-attr="class='btn-outline-default auto-invert' data-editor='menu' data-edit='true'">
+            <li><a href="https://www.facebook.com/thehistoriceurekainn" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-facebook"></i></a></li>
+            <li><a href="http://instagram.com/historic_eureka_inn" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/Historic_Eureka" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-twitter"></i></a></li>
+            <li><a href="http://www.pinterest.com/pin/create/button/" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-pinterest-p"></i></a></li>
+            <li><a href="http://www.tripadvisor.com/Hotel_Review-g55130-d1529092-Reviews-Historic_Eureka_Inn-Jonesborough_Tennessee.html" class="btn-outline-default auto-invert" data-editor="menu" data-edit="false"><i class="fa-tripadvisor"></i></a></li>
+            <li><a href="https://www.expedia.com/Jonesborough-Hotels-Historic-Eureka-Inn.h10348783.Hotel-Information?chkin=02%2F21%2F2016&amp;chkout=02%2F22%2F2016&amp;rm1=a2&amp;hwrqCacheKey=120ec024-4d22-4a3c-ba6a-52fd03c8d073HWRQ1455232339749&amp;c=8f5eb943-7d44-463d-a282-67423a911978&amp;" class="btn-outline-default auto-invert" data-editor="menu" data-edit="false"><i class="fa-plane"></i></a></li>
           </ul>
-          <!-- /Hash List -->
-
+          <a class="fg-red" href="#contact" data-hidden="true" data-editor="menu-new" data-menu="#social-links">+ New Link</a>
         </div>
-        <!-- /Container -->
-
-      </div>
-      <!-- /Stats Block -->
-
-      <!-- Plans Block -->
-      <div id="plans" class="block bg-white border-b" data-edit="false">
-
-        <!-- Container -->
-        <div class="container container-main auto-invert pady-block-lg">
-
-          <!-- Title -->
-          <div class="section-title auto-invert line-b align-center">
-            <h2 class="font-cond-b fg-text-d lts-sm" contenteditable="false">Our Price Plans</h2>
-            <p class="font-cond-l lts-sm" contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-          </div>
-          <!-- /Title -->
-
-          <!-- Row -->
-          <div class="row pady-15-all-xs">
-            <!-- Col -->
-            <div class="col-sm-4">
-              <div class="vcard pad-40 align-center bd-all bdc-black-10 bdw-3">
-                <h4 class="font-cond-b case-u fg-text-d" contenteditable="false">starter</h4>
-                <h2 class="font-cond-b fg-text-d fs-350" contenteditable="false">$35</h2>
-                <ul class="vlinks mgb-30 pady-10-all fg-text ruled-list auto-invert">
-                  <li contenteditable="false">Design Wireframes</li>
-                  <li contenteditable="false">PSD to HTML Conversion</li>
-                  <li contenteditable="false">Custom Wordpress Theming</li>
-                  <li contenteditable="false">Website Deployment</li>
-                </ul>
-                <a href="#" class="btn btn-default case-u btn-cta font-cond-l auto-invert" data-edit="false" data-editor="field" data-field="href[Button Url]; html[Button Text]">choose plan</a>
-              </div>
-            </div>
-            <!-- /Col -->
-
-            <!-- Col -->
-            <div class="col-sm-4">
-              <div class="vcard pad-40 align-center bd-all bdc-accent bdw-3">
-                <h4 class="font-cond-b case-u fg-accent" contenteditable="false">advanced</h4>
-                <h2 class="font-cond-b fg-accent fs-350" contenteditable="false">$40</h2>
-                <ul class="vlinks mgb-30 pady-10-all fg-text ruled-list auto-invert">
-                  <li contenteditable="false">Design Wireframes</li>
-                  <li contenteditable="false">PSD to HTML Conversion</li>
-                  <li contenteditable="false">Custom Wordpress Theming</li>
-                  <li contenteditable="false">Website Deployment</li>
-                </ul>
-                <a href="#" class="btn btn-accent case-u btn-cta font-cond-l auto-invert" data-edit="false" data-editor="field" data-field="href[Button Url]; html[Button Text]">choose plan</a>
-              </div>
-            </div>
-            <!-- /Col -->
-
-            <!-- Col -->
-            <div class="col-sm-4">
-              <div class="vcard pad-40 align-center bd-all bdc-black-10 bdw-3">
-                <h4 class="font-cond-b case-u fg-text-d" contenteditable="false">premium</h4>
-                <h2 class="font-cond-b fg-text-d fs-350" contenteditable="false">$60</h2>
-                <ul class="vlinks mgb-30 pady-10-all fg-text ruled-list auto-invert">
-                  <li contenteditable="false">Design Wireframes</li>
-                  <li contenteditable="false">PSD to HTML Conversion</li>
-                  <li contenteditable="false">Custom Wordpress Theming</li>
-                  <li contenteditable="false">Website Deployment</li>
-                </ul>
-                <a href="#" class="btn btn-default case-u btn-cta font-cond-l auto-invert" data-edit="false" data-editor="field" data-field="href[Button Url]; html[Button Text]">choose plan</a>
-              </div>
-            </div>
-            <!-- /Col -->
-          </div>
-          <!-- /Row -->
-
-        </div>
-        <!-- /Container -->
-
-      </div>
-      <!-- /Plans Block -->
-
-      <!-- Contact Form -->
-      <div id="contact" class="block bg-white border-b" data-edit="false">
-
-        <!-- Container -->
-        <div class="container container-main auto-invert pady-block-lg">
-
-          <!-- Title -->
-          <div class="section-title auto-invert line-b align-center">
-            <h2 class="font-cond-b fg-text-d lts-sm" contenteditable="false">Send Us Feedback</h2>
-            <p class="font-cond-l lts-sm" contenteditable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-          </div>
-          <!-- /Title -->
-
-          <!-- Contact Form -->
-          <form id="contact-form" class="contact-form" action="email.php" data-edit="false" data-editor="field">
-
-            <div class="alert alert-success alert-sent hidden"><b>Success! </b>Message sent.</div>
-            <div class="alert alert-danger alert-failed hidden"><b>Error! </b>Message not sent. Make sure you are connected to a working email server.</div>
-            <!-- Row -->
-            <div class="row">
-              <!-- Col -->
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input name="subject" type="text" class="form-control" placeholder="Subject" data-field="placeholder[Subject Placeholder Text]" value="Site Feedback" required/>
-                  <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                </div>
-
-                <div class="form-group">
-                  <input name="name" type="text" class="form-control" placeholder="Full Name" data-field="placeholder[Name Placeholder Text]" required/>
-                  <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                </div>
-
-                 <div class="form-group">
-                  <input name="number" type="text" class="form-control" placeholder="Optional Contact Number" data-field="placeholder[Phone Placeholder Text]"/>
-                  <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                </div>
-
-                <div class="form-group">
-                  <input name="email" type="email" class="form-control" placeholder="Email Address" data-field="placeholder[Email Placeholder Text]" data-error="Enter valid email address" required/>
-                  <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                </div>
-              </div>
-              <!-- /Col -->
-
-              <!-- Col -->
-              <div class="col-sm-6">
-
-                <div class="form-group message-box bg-white">
-                  <textarea name="message" class="form-control" required></textarea>
-                  <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                  <button id="send-message" class="btn btn-primary case-u lts-sm " data-field="html[Button Text]">send message</button>
-                </div>
-
-              </div>
-              <!-- /Col -->
-
-            </div>
-            <!-- /Row -->
-
+        <!-- Col -->
+        <!-- Col -->
+        <div class="col-sm-3 col-vtop">
+          <h5 class="fg-text-d font-cond lts-md mgb-20 case-u" contenteditable="false">Get Our Newsletter</h5>
+          <form class="form-controls-lg">
+            <input class="form-control mgb-15" placeholder="Enter Email Address">
+            <button class="btn btn-accent btn-block font-cond-l case-u lts-sm">subscribe</button>
           </form>
-          <!-- /Contact Form -->
-
         </div>
-        <!-- /Container -->
-
+        <!-- Col -->
       </div>
-      <!-- /Contact Form -->
-
-      <!-- Reviews -->
-      <div id="reviews" class="block white-bg align-center" data-edit="false">
-
-        <!-- Container -->
-        <div class="container container-main auto-invert pady-block-lg">
-
-          <!-- Title -->
-          <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
-            <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">Not Yet Convinced?</h4>
-            <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read Customer Reviews</h1>
-          </div>
-          <!-- /Title -->
-
-          <!-- Hash List -->
-          <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
-            <li>
-              <img src="/images/face1.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"  data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]" />
-              <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Martha Stewart</h5>
-              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business Woman - New York</small>
-            </li>
-            <li>
-              <img src="/images/face2.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"  data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]" />
-              <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ariana Menage</h5>
-              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Recording Artist - Los Angeles</small>
-            </li>
-            <li>
-              <img src="/images/face3.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"  data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]" />
-              <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
-              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Sean Carter</h5>
-              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Fund Manager - Chicago</small>
-            </li>
-          </ul>
-          <!-- /Hash List -->
-
-        </div>
-        <!-- /Container -->
-
-      </div>
-      <!-- /Reviews -->
-
-      <!-- Alternate Footer Block -->
-      <div id="alt-footer" class="block bg-primary-d inverse-all">
-
-        <!-- Container -->
-        <div class="container auto-invert pady-60">
-
-          <!-- Row -->
-          <div class="row row-table bdb-all pady-30-all-xs align-center-xs">
-
-            <!-- Col -->
-            <div class="col-sm-3 align-center col-vmid bd-b-xs">
-              <a class="fg-text-d font-cond-b lts-md fs-250 lyt-block" href="#home" data-edit="false" data-editor="field" data-field="href[Brand Link]">
-                <i class="et-target fg-accent mgb-10 lyt-block" data-field="class[Brand Icon Class,icon]"></i>
-                <span data-field="html[Brand Text]">TORUS</span>
-              </a>
-            </div>
-            <!-- Col -->
-
-            <!-- Col -->
-            <div class="col-sm-6 col-vtop bd-b-xs">
-              <h5 class="fg-text-d font-cond lts-md mgb-10 case-u" contenteditable="false">some information</h5>
-              <p class="fg-text-l font-cond-l" contenteditable="false">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-              <ul id="social-links" class="hlinks hlinks-icons  color-icons-bg-hovered s-200" data-icon-title="true" data-menu-attr="class='btn-outline-default auto-invert' data-editor='menu' data-edit='true'">
-                <li><a href="#" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-twitter"></i></a></li>
-                <li><a href="#" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-facebook"></i></a></li>
-                <li><a href="#" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-google-plus"></i></a></li>
-                <li><a href="#" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-youtube"></i></a></li>
-                <li><a href="#" class="btn-outline-default auto-invert" data-edit="false" data-editor="menu"><i class="fa-rss"></i></a></li>
-              </ul>
-              <a class="fg-red" href="#contact" data-hidden="true" data-editor="menu-new" data-menu="#social-links">+ New Link</a>
-            </div>
-            <!-- Col -->
-
-            <!-- Col -->
-            <div class="col-sm-3 col-vtop">
-              <h5 class="fg-text-d font-cond lts-md mgb-20 case-u" contenteditable="false">Get Our Newsletter</h5>
-              <form class="form-controls-lg" action="">
-                <input name="" class="form-control mgb-15" placeholder="Enter Email Address"/>
-                <button class="btn btn-accent btn-block font-cond-l case-u lts-sm">subscribe</button>
-              </form>
-            </div>
-            <!-- Col -->
-
-          </div>
-          <!-- /Row -->
-
-        </div>
-        <!-- /Container -->
-
-      </div>
-      <!-- /Alternate Footer Block -->
-
-      <!-- Footer -->
-      <footer id="footer" class="block bg-primary inverse-all" data-edit="false">
-
-        <!-- Container -->
-        <div class="container auto-invert pady-20">
-          <!-- Row -->
-          <div class="row row-table pady-10-all-xs">
-
-            <!-- Col -->
-            <div class="col-sm-5 align-center-xs">
-              <span class="font-cond-l lts-sm fs-80 fg-text" contenteditable="false" data-cmenu="font">&copy; 2015 TORUS Bootstrap Theme By Arnique Studio.</span>
-            </div>
-            <!-- /Col -->
-
-            <!-- Col -->
-            <div class="col-sm-7 align-right align-center-xs">
-              <ul id="footer-links" class="hlinks hlinks-default fs-80 font-cond-l case-u lts-sm" data-menu-attr="data-editor='menu' data-edit='true'">
-                <li><a href="#" data-edit="false" data-editor="menu">Terms & Conditions</a></li>
-                <li><a href="#" data-edit="false" data-editor="menu">About</a></li>
-                <li><a href="#" data-edit="false" data-editor="menu">Home</a></li>
-              </ul>
-
-              <a class="fg-red" href="#contact" data-hidden="true" data-editor="menu-new" data-menu="#footer-links">+ New Link</a>
-            </div>
-            <!-- /Col -->
-
-          </div>
-          <!-- /Row -->
-        </div>
-        <!-- /Container -->
-
-      </footer>
-      <!-- /Footer -->
-
+      <!-- /Row -->
     </div>
-    <!-- /Page Wrapper -->
-
-    <!-- Scripts -->
-    <script src="/js/jquery-latest.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.swipebox.min.js"></script>
-    <script src="/js/jquery.bxslider-rahisified.js"></script>
-    <script src="/js/jquery.scrollTo.min.js"></script>
-    <script src="/js/validator.min.js"></script>
-    <script src="/js/FileSaver.min.js"></script>
-    <script src="/js/main.js"></script>
-    <!-- /Scripts -->
-
-  </body>
+    <!-- /Container -->
+  </div>
+  <!-- /End #footer -->
+</div>
+<!-- /Page Wrapper -->
+<!-- Scripts -->
+<script src="/js/jquery-latest.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/jquery.swipebox.min.js"></script>
+<script src="/js/jquery.bxslider-rahisified.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/validator.min.js"></script>
+<script src="/js/FileSaver.min.js"></script>
+<script src="/js/uikit.js"></script>
+<!-- /Scripts -->
+</body>
 </html>
