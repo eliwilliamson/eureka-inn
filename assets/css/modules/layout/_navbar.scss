@@ -24,9 +24,10 @@
 
   .navbar-brand {
     color: skin-color(text-d);
+    padding: 0;
 
     .logo {
-      height: 100px;
+      height: 100%;
       width: auto;
     }
   }
