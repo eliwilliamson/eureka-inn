@@ -88,14 +88,26 @@
 
       > li {
         > a {
-          background:rgba(#000, 0.9);
-          color: #fff;
-          border-bottom:1px dotted rgba(#fff, 0.2);
+          border-bottom:1px dotted rgba(#000, 0.2);
+          text-align: center;
+
+          &.btn-accent {
+            background-color: skin-color(accent);
+            border-bottom: none;
+            color: white;
+          }
+        }
+
+        &:nth-child(4) > a {
+          border-bottom: none;
         }
 
         &:hover > a, &.active > a, a:focus {
-          background:rgba(#000, 0.85);
-          color: #fff;
+          background:rgba(#000, 0.2);
+
+          &.btn-accent {
+            background-image: linear-gradient(to bottom, rgba(#fff, 0.1) 1%, rgba(#fff, 0.1) 100%);
+          }
         }
       }
     }
