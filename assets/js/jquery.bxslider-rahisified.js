@@ -35,7 +35,7 @@
 		mode: 'horizontal',
 		slideSelector: '',
 		infiniteLoop: true,
-		hideControlOnEnd: false,
+		hideControlOnEnd: true,
 		speed: 500,
 		easing: null,
 		slideMargin: 0,
@@ -840,8 +840,8 @@
 			slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
 			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
 			// bind click actions to the controls
-			//slider.controls.next.bind('click', clickNextBind);
-      // slider.controls.prev.bind('click', clickPrevBind);
+			slider.controls.next.bind('click', clickNextBind);
+      slider.controls.prev.bind('click', clickPrevBind);
 
       // NOTE: switched to live binding for current project
       $("body").on('click', slider.controls.next, clickNextBind);
@@ -1451,7 +1451,7 @@
 		/**
 		 * Transitions to the next slide in the show
 		 */
-		el.goToNextSlide = function(){
+		el.goToPrevSlide = function(){
 			// if infiniteLoop is false and last page is showing, disregard call
 			if (!slider.settings.infiniteLoop && slider.active.last) return;
 			var pagerIndex = parseInt(slider.active.index) + 1;
@@ -1461,7 +1461,7 @@
 		/**
 		 * Transitions to the prev slide in the show
 		 */
-		el.goToPrevSlide = function(){
+		el.goToNextSlide = function(){
 			// if infiniteLoop is false and last page is showing, disregard call
 			if (!slider.settings.infiniteLoop && slider.active.index == 0) return;
 			var pagerIndex = parseInt(slider.active.index) - 1;
