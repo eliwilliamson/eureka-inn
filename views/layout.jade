@@ -4,8 +4,6 @@
 
 doctype html
 html(lang='en')
-  //- Moved HEAD to bottom to accomodate page-specific variables (titles)
-  include shared/head
 
   body.font-reg-l.show-editor-hovered(data-spy='scroll', data-target='.navbar')
     .page-loader.align-center.bg-white(style='display: none;')
@@ -21,3 +19,5 @@ html(lang='en')
 
     include shared/scripts
 
+  //- Moved HEAD to bottom to accomodate page-specific variables (titles)
+  include shared/head
