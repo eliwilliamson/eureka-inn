@@ -128,6 +128,22 @@ function setupNav(target) {
 // ------------------------------------------
 $(window).load(function() {
   hidePageLoader();
+
+
+  /**
+  * Self calling functionality
+  * --------------------------------------------------------------------------------------- */
+  var bxSliders = [];
+
+  function callBxSlider() {
+   $('[data-call="bxslider"][data-bxinit="false"]').each(function(index) {
+      var slider = $(this).bxSlider();
+      var i = bxSliders.push(slider) - 1;
+      slider.attr("bxindex", i);
+   });
+  }
+
+  callBxSlider();
 })
 
 // DOC READY

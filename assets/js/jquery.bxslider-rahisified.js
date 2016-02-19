@@ -17,7 +17,7 @@
  * (1) Added data attributes support
  * (2) Added break points support
  * (3) Added animatable layers
- * (4) Added automatic slide width calculation 
+ * (4) Added automatic slide width calculation
  * (4) Added self calling capability
  * ---------------------------------------------------------------------------------------
  * - Would not be possible without the awesome work of Steven Wanderski.
@@ -103,7 +103,7 @@
 		onSlideNext: function() {},
 		onSlidePrev: function() {},
 		onSliderResize: function() {},
-    
+
     // CUSTOM
     autoReload: true,
 	}
@@ -143,44 +143,44 @@
 		 * Initializes namespace settings to be used throughout plugin
 		 */
 		var init = function(){
-    
+
       // merge user-supplied options with the defaults
 			slider.settings = $.extend({}, defaults, options);
-      
-		 /** 
+
+		 /**
      * ===================================================================================
 		 *  CUSTOM MODIFICATIONS (Delete this block if you disapprove!)
 		 * ===================================================================================
 		 */
-     
+
       // set up carousel if initial options intended to do so
       setupCarousel();
-      
+
       // screen width we will be referring to
       var currentWidth = $(window).width();
       // force the slider to use this width(disable if you disapprove!)
       windowWidth = currentWidth;
-      
+
       /* DEFINE FUNCTIONS WE WILL USE
       -----------------------------------------------------------------*/
 
       // calculates slide width
       function calcSlideWidth (fullW, numSlides, margin) {
-      
+
         var calcWidth = (fullW-(margin*(numSlides-1))) / numSlides;
         return Math.floor(calcWidth);
-        
+
       }
-      
+
       // sets break point options
       function setBreakOptions(breakObj) {
-      
+
         for(var key in breakObj) {
           slider.settings[key] = breakObj[key];
         }
 
       }
-      
+
       // sets up carousel from available options
       function setupCarousel() {
 
@@ -188,38 +188,38 @@
           slider.settings.maxSlides = slider.settings.slides;
           slider.settings.minSlides = slider.settings.slides;
           slider.settings.slideWidth = calcSlideWidth (windowWidth, slider.settings.slides, slider.settings.slideMargin);
-        } 
-        
+        }
+
       }
-      
+
       // converts string into valid JSON format
       function jsonify(str) {
-        
+
         str = str.replace(/([a-zA-Z]+?):/g, '"$1":');
         str = str.replace(/'/g, '"');
         var jsonArray = jQuery.parseJSON(str);
         return jsonArray;
-      
+
       }
-      
+
       // (1) Grab data options if available
       // ---------------------------------------------------------------------------------
-      
+
       var dataOptions = $(el).attr('data-options');
 
       if(dataOptions) {
-      
+
         //add curly brackets if not there
         var lastChar = dataOptions.charAt(dataOptions.length-1);
         var firstChar = dataOptions.charAt(0);
-        
+
         if(firstChar != "{" && lastChar != "}" ) {
           dataOptions = "{" + dataOptions + "}";
         }
-      
+
         // exploit JSON parser to lessen work
         var opts = jsonify(dataOptions);
-        
+
         for (var key in opts) {
           slider.settings[key] = opts[key];
         }
@@ -227,59 +227,59 @@
         setupCarousel();
 
       }
-      
+
       // (2) Grab breaks from data attributes if available
       // ---------------------------------------------------------------------------------
-      
+
       var dataBreaks = $(el).attr('data-breaks');
-      
-      
+
+
       if(dataBreaks) {
         // exploit JSON parser to lessen work
         slider.settings.breaks = jsonify(dataBreaks);
       }
-      
+
       // (3) proceed to process(if available) the user supplied break points
       // ---------------------------------------------------------------------------------
-      
+
       if(slider.settings.breaks) {
 
         // Sort in ascending order in case of mix up
          slider.settings.breaks.sort(function(a, b) {
           return a.screen - b.screen;
          });
-        
+
         // Process breaks
         for(var i = 0; i < slider.settings.breaks.length; ++i) {
-          
+
           var currentBreak =  slider.settings.breaks[i];
           var nextBreak = {};
           var min = currentBreak.screen;
           var max;
-          
+
           if(i < slider.settings.breaks.length - 1) { // next break exists
-          
+
             nextBreak = slider.settings.breaks[i+1];
             max = nextBreak.screen;
-            
+
             if(currentWidth >= min && currentWidth < max) {
               setBreakOptions(currentBreak);
             }
-            
+
           } else { // just use current break coz next one does not exist
-          
+
             if(currentWidth >= min) {
               setBreakOptions(currentBreak);
             }
           }
 
         }
-        
+
         // set up carousel if options intended to do so
         setupCarousel();
 
       }
-      
+
 
         if(slider.settings.fullscreen) {
           var fullWidth = $(window).width();
@@ -355,7 +355,7 @@
 			// wrap el in a wrapper
       var sliderW = el.width();
       var relSize;
-      
+
       if(sliderW <= 400) {
         relSize = "size-xs";
       } else if (sliderW > 400 && sliderW <= 767) {
@@ -365,7 +365,7 @@
       } else {
         relSize = "size-lg";
       }
-      
+
 			el.wrap('<div class="' + slider.settings.wrapperClass + ' ' + relSize + '"><div class="bx-viewport"></div></div>');
 			// store a namspace reference to .bx-viewport
 			slider.viewport = el.parent();
@@ -479,7 +479,7 @@
 				var slicePrepend = slider.children.slice(-slice).clone().addClass('bx-clone');
 				el.append(sliceAppend).prepend(slicePrepend);
 			}
-      
+
       // remove any classes if instructed
       if(slider.settings.removeClass) {
         el.removeClass(slider.settings.removeClass);
@@ -503,13 +503,13 @@
       var startSlide = slider.children.eq(slider.active.index);
       startSlide.addClass("active");
       var animDur = playAnims(startSlide);
-        
+
       if(animDur) {
         setTimeout(function(){
-          removeAnims(startSlide);          
+          removeAnims(startSlide);
         }, animDur);
-      }  
-      
+      }
+
 			// bind the resize call to the window
 			if (slider.settings.responsive) $(window).bind('resize', resizeWindow);
 			// if auto is true and has more than 1 page, start the show
@@ -842,7 +842,7 @@
 			// bind click actions to the controls
 			//slider.controls.next.bind('click', clickNextBind);
       // slider.controls.prev.bind('click', clickPrevBind);
-      
+
       // NOTE: switched to live binding for current project
       $("body").on('click', slider.controls.next, clickNextBind);
       $("body").on('click', slider.controls.prev, clickPrevBind);
@@ -1023,29 +1023,29 @@
 			}
       // mark active slide
       var activeSlide = slider.children.eq(slider.active.index);
-      slider.children.removeClass("active"); 
+      slider.children.removeClass("active");
       activeSlide.addClass("active");
       // animate layers if available
       var animDur = playAnims(activeSlide);
-        
+
       if(animDur) {
         setTimeout(function(){
-          removeAnims(activeSlide);          
+          removeAnims(activeSlide);
         }, animDur);
-      }  
-          
+      }
+
 			// onSlideAfter callback
       slider.working = false;
 			slider.settings.onSlideAfter(slider.children.eq(slider.active.index), slider.oldIndex, slider.active.index);
 		}
-    
+
     function removeAnims(slide) {
       $(slide).find(".bx-layer").each(function() {
         var anim = $(this).attr("data-anim");
         $(this).removeClass("animated " + anim);
-      });   
+      });
     }
-    
+
     function playAnims(slide) {
       var durCol = [];
       $(slide).find(".bx-layer").each(function(index) {
@@ -1055,7 +1055,7 @@
         var anim = $(this).attr("data-anim");
         $(this).css({"animation-duration": dur + "ms", "animation-delay": delay + "ms", "animation-fill-mode": "both"}).addClass("animated " + anim);
       });
-      
+
       if(durCol[0]) {
         return (Math.max.apply(Math, durCol));
       } else {
@@ -1580,7 +1580,7 @@
         init();
       }
 		}
-    
+
 		/**
 		 * auto reload functionality
 		 */
@@ -1595,22 +1595,7 @@
 		// returns the current jQuery object
 		return this;
 	}
-
 })(jQuery);
 
- /**
- * Self calling functionality
- * --------------------------------------------------------------------------------------- */
-var bxSliders = [];
- 
-function callBxSlider() {
- $('[data-call="bxslider"][data-bxinit="false"]').each(function(index) {
-    var slider = $(this).bxSlider();
-    var i = bxSliders.push(slider) - 1;
-    slider.attr("bxindex", i);
- });
-}
- 
-callBxSlider();
- 
- 
+
+
