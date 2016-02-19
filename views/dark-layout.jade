@@ -13,11 +13,7 @@ html(lang='en')
             div
     #page-wrapper.page-wrapper(data-editmode='false')
 
-      -if (page="Homepage")
-        include shared/nav-inverse
-      -else
-        include shared/nav
-
+      include shared/nav-dark
       block content
       include shared/footer
 
