@@ -30,12 +30,12 @@ function cycleBack(index, total) {
 function invert(v, a, b) {
   return (v == a)? b : a;
 }
-function getDocType() { 
+function getDocType() {
  var node = document.doctype;
  return node ? "<!DOCTYPE "
            + node.name
            + (node.publicId ? ' PUBLIC "' + node.publicId + '"' : '')
-           + (!node.publicId && node.systemId ? ' SYSTEM' : '') 
+           + (!node.publicId && node.systemId ? ' SYSTEM' : '')
            + (node.systemId ? ' "' + node.systemId + '"' : '')
            + '>\n' : '';
 }
@@ -63,13 +63,18 @@ $.fn.insertIndex = function (i) {
 };
 
 function showPageLoader() {
-  $('.page-loader').show(); 
+  $('.page-loader').show();
   $('.page-loader .anim').show();
 }
 function hidePageLoader() {
-  $('.page-loader .anim').fadeOut(); 
+  $('.page-loader .anim').fadeOut();
   $('.page-loader').delay(350).fadeOut();
 }
+
+// HERO
+// ---------------------------------
+$('#arc-top').arctext({radius: 100});
+$('#arc-bottom').arctext({radius: 100, dir: -1});
 
 // NAV
 // ---------------------------------
@@ -90,11 +95,11 @@ nav.sticky.init = function(navbar) {
   nav.sticky.navbar = navbar;
   nav.sticky.scrollOffset = - navbar.outerHeight();
   nav.sticky.spyOffset = navbar.outerHeight() + 1;
-  
+
   $('body').scrollspy({
      offset: nav.sticky.spyOffset
   });
-  
+
   nav.sticky.autoToggle = function(){
     if ($(window).scrollTop() > nav.sticky.triggerH) {
       navbar.removeClass(navbar.attr("data-del")).addClass(navbar.attr("data-add"));
@@ -102,13 +107,13 @@ nav.sticky.init = function(navbar) {
       navbar.removeClass(navbar.attr("data-add")).addClass(navbar.attr("data-del"));
     }
   }
-  
+
   nav.sticky.autoToggle();
-  
+
   $(window).scroll(function() {
     nav.sticky.autoToggle();
   });
-  
+
   navbar.data("initialized", true);
   nav.active = nav.sticky;
   nav.offset = nav.sticky.scrollOffset;
@@ -132,15 +137,15 @@ $().ready(function() {
   // IMAGE BOX
   // ----------------------------------------
   $("[data-swipebox='true']").swipebox();
-  
+
   // NAV
   // ----------------------------------------
   setupNav($("[data-navbar]"));
-  
+
   // TOOLTIPPS
   // ----------------------------------------
-  $("[data-show='tooltip']").tooltip();   
-  
+  $("[data-show='tooltip']").tooltip();
+
   // NAV TOGGLE LINKS
   // ----------------------------------------
   $("body").on("click", "[data-toggle-nav]", function(e) {
@@ -150,13 +155,13 @@ $().ready(function() {
       $(target).toggleClass("hide-nav");
     }
   });
-  
+
   // SCROLLER
   // ----------------------------------------
   $("body").on("click", "[data-scroll='true']", function(e) {
     e.preventDefault();
     e.stopPropagation();
-    
+
     var target = $(this).attr("href");
     if($(target).length > 0 ) {
       $.scrollTo(target, 500, {offset:nav.active.scrollOffset});
@@ -164,7 +169,7 @@ $().ready(function() {
       //alert("The link [" + target + "] cannot be found!\n\nMake sure your links are pointing to the correct blocks")
     }
   });
-  
+
   // CONTACT FORM
   // ----------------------------------------
   function sendMessage(formData) {
@@ -184,7 +189,7 @@ $().ready(function() {
         }
     });
   }
-  
+
   $("#contact-form").validator().on("submit", function(e) {
 
     if(e.isDefaultPrevented()) {
@@ -195,9 +200,9 @@ $().ready(function() {
       console.log(data);
       sendMessage(data);
     }
-    
+
   });
-  
+
 });
 
 function scrollPage(target) {
