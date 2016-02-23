@@ -844,8 +844,8 @@
       slider.controls.prev.bind('click', clickPrevBind);
 
       // NOTE: switched to live binding for current project
-      $("body").on('click', slider.controls.next, clickNextBind);
-      $("body").on('click', slider.controls.prev, clickPrevBind);
+      // $("body").on('click', slider.controls.next, clickNextBind);
+      // $("body").on('click', slider.controls.prev, clickPrevBind);
 
 			// if nextSlector was supplied, populate it
 			if(slider.settings.nextSelector){
