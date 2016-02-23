@@ -10,7 +10,7 @@
 
 .navbar-fixed {
 
-	&.inverse .logo {
+	&.nav-light.inverse .logo {
 		opacity: 0;
 		transition: opacity 1s;
 	}

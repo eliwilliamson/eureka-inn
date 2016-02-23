@@ -166,9 +166,11 @@ $().ready(function() {
   // ----------------------------------------
   $("body").on("click", "[data-toggle-nav]", function(e) {
     e.preventDefault();
-    var target = $(this).attr("data-toggle-nav");
+    var target  = $(this).attr("data-toggle-nav"),
+        menuBtn = $(".navbar-toggle-link");
     if(target) {
       $(target).toggleClass("hide-nav");
+      $(menuBtn).toggleClass("show-close");
     }
   });
 
