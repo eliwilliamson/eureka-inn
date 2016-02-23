@@ -1,0 +1,25 @@
+nav#navigation.block.navbar.navbar-fixed.navbar-main.nav-light-left(data-categ='navbar', data-navbar='sticky', data-add='bg-white border-b')
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse', aria-expanded='false')
+        span.sr-only Toggle navigation
+        i.ti-close
+        i.ti-menu
+      a.navbar-brand.font-cond-b.lts-md(href='/')
+        img.logo.white(src='/images/logomark-white.svg', title='Historic Eureka Inn', alt='Historic Eureka Inn')
+        img.logo.black(src='/images/logomark-black.svg', title='Historic Eureka Inn', alt='Historic Eureka Inn')
+    .collapse.navbar-collapse
+      a.navbar-right.navbar-toggle-link.hidden-xs(href='#', data-toggle-nav='#navbar-nav-main', data-add="show-close")
+        i.ti-close.fs-150
+        i.ti-menu.fs-150
+      ul#navbar-nav-main.nav.navbar-nav.navbar-right.case-u.font-reg-mb.lts-md.hide-nav(data-menu-attr="data-scroll='false' data-editor='menu' data-edit='true'")
+        li
+          a(href='/about.html') About
+        li
+          a(href='/weddings-events.html') Weddings &amp; Events
+        li
+          a(href='/blog.html') Blog
+        li
+          a(href='/contact.html') Contact
+        li
+          a.btn.btn-cta.btn-accent.btn-book-now.case-u.lts-sm(href='https://clients.innroad.com/hei/property.aspx') Book Now!
