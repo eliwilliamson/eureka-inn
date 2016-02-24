@@ -1,5 +1,13 @@
 #food {
-    background-size: 59%;
-    background-repeat: no-repeat;
-    background-position: -36% -21%;
+  background-size: 59%;
+  background-repeat: no-repeat;
+  background-position: -36% -21%;
+
+  @media (max-width:767px) {
+    background-position: center -21%;
+
+    .img-col {
+      display: none;
+    }
+  }
 }
