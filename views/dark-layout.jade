@@ -6,11 +6,7 @@ doctype html
 html(lang='en')
 
   body.font-reg-l.show-editor-hovered(data-spy='scroll', data-target='.navbar')
-    .page-loader.align-center.bg-white(style='display: none;')
-      .valigner
-        .v-middle
-          .la-ball-clip-rotate.fg-primary.hcenter
-            div
+    include shared/page-loader
     #page-wrapper.page-wrapper(data-editmode='false')
 
       include shared/nav-dark
