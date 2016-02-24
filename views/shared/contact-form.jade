@@ -1,0 +1,32 @@
+#contact
+  .container.container-main.auto-invert.pady-block-lg
+    .section-title.auto-invert.line-b.align-center
+      h2.font-cond-b.fg-text-d.lts-sm Come experience history.
+      p.font-cond-l.lts-sm
+        | Blake and Katelyn are standing by to recieve your inquiry. Service never ceases to smile.
+    form#contact-form.contact-form(action='email.php')
+      .alert.alert-success.alert-sent.hidden
+        b Terrific!
+        | Your message has been sent.
+      .alert.alert-danger.alert-failed.hidden
+        b Uh Oh!
+        | There was an error and your message not sent. Please try again or give us a call at (423) 913-6100.
+      .row
+        .col-sm-6
+          .form-group
+            input.form-control(name='name', placeholder='Full Name', required='', type='text')
+            span.glyphicon.form-control-feedback(aria-hidden='true')
+          .form-group
+            input.form-control(name='number', placeholder='Phone Number', type='text')
+            span.glyphicon.form-control-feedback(aria-hidden='true')
+          .form-group
+            input.form-control(name='email', placeholder='Email Address', data-error='Enter valid email address', required='', type='email')
+            span.glyphicon.form-control-feedback(aria-hidden='true')
+          .form-group
+            input.form-control(name='subject', placeholder='Subject', required='', type='text')
+            span.glyphicon.form-control-feedback(aria-hidden='true')
+        .col-sm-6
+          .form-group.message-box.bg-white
+            textarea.form-control(name='message', placeholder='How can we help?', required='')
+            span.glyphicon.form-control-feedback(aria-hidden='true')
+            button#send-message.btn.btn-primary.case-u.lts-sm Send message
