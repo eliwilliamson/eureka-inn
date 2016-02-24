@@ -3,7 +3,7 @@
 .btn, [class*="btn-"]  {
   border:1px solid rgba(#000, 0.07);
   color:#fff;
-  
+
   &:hover, &:focus, &:active, &:active:focus {
     background-image: linear-gradient(to bottom, rgba(#fff, 0.1) 1%, rgba(#fff, 0.1) 100%);
     color: #fff;
@@ -14,7 +14,7 @@
     display:inline-block;
     margin:0 0.9em 0 0;
   }
-  
+
   .icon-right {
     margin:0 0 0 0.9em;
   }
@@ -25,9 +25,9 @@
 }
 
 [class*="btn-outline"] {
-  background:none; 
+  background:none;
   border:none;
-  
+
   &:hover {
     border:none;
   }
@@ -36,7 +36,7 @@
 /* Primary */
 .btn-primary {
   border:1px solid transparent;
-  
+
   &:hover, &:focus, &:active, &:active:focus {
     color: #fff;
     background-color:skin-color(primary);
@@ -56,7 +56,7 @@
 .btn-outline {
   box-shadow:inset 0 0 0 1px skin-color(primary);
   color: skin-color(primary);
-  
+
   &.outline-thick {
     box-shadow:inset 0 0 0 2px skin-color(primary);
   }
@@ -70,7 +70,7 @@
 .inverse-all .btn-outline.auto-invert {
   box-shadow:inset 0 0 0 1px #fff;
   color:#fff;
-  
+
   &:hover {
     color: skin-color(primary);
     background:#fff;
@@ -83,7 +83,7 @@
   background-color: rgba(#000, 0.1);
   color: skin-color(text);
   border:1px solid rgba(#000, 0.1);
-  
+
   &:hover, &:focus, &:active, &:active:focus {
     color: skin-color(text);
     border:1px solid rgba(#000, 0.1);
@@ -95,7 +95,7 @@
   background-color: rgba(#fff, 0.1);
   color:#fff;
   border:1px solid transparent;
-  
+
   &:hover, &:focus, &:active, &:active:focus {
     background-color: rgba(#fff, 0.05);
     color:#fff;
@@ -106,7 +106,7 @@
 .btn-outline-default {
   box-shadow:inset 0 0 0 1px rgba(#000, 0.2);
   color: skin-color(text);
-  
+
   &.outline-thick {
     box-shadow:inset 0 0 0 2px rgba(#000, 0.2);
   }
@@ -121,11 +121,11 @@
 .inverse-all .btn-outline-default.auto-invert {
   box-shadow:inset 0 0 0 1px rgba(#fff, 0.1);
   color:#fff;
-  
+
   &.outline-thick {
     box-shadow:inset 0 0 0 2px rgba(#fff, 0.1);
   }
-  
+
   &:hover {
     box-shadow: none;
     color: #fff;
@@ -136,7 +136,7 @@
 .btn-outline-accent {
   box-shadow:inset 0 0 0 1px skin-color(accent);
   color: skin-color(accent);
-  
+
   &.outline-thick {
     box-shadow:inset 0 0 0 2px skin-color(accent);
   }
@@ -168,12 +168,12 @@
   width:2em;
   line-height:2em;
   position:relative;
-  
+
   .icon {
     display:block;
     line-height:2em;
   }
-  
+
   .icon-abs {
     position:absolute;
     top:0;
@@ -191,7 +191,7 @@
   text-align: left;
   line-height:1em;
   padding:1em 3em 1em 1.5em;
-  
+
   i, span {
     display:inline-block;
     vertical-align: middle;
@@ -199,19 +199,19 @@
   i {
     font-size:2.7em;
   }
-  
+
   span {
     margin-left:0.7em;
   }
   small, b {
     display: block;
   }
-  
+
   small {
     font-size:0.8em;
     margin-bottom:0.5em;
   }
-  
+
   b + small {
     margin:0.5em 0 0 0;
   }
@@ -219,7 +219,7 @@
 
 .btn-pbar {
   position: relative;
-  
+
   .text {
     z-index: 10;
     position: relative;
@@ -231,4 +231,8 @@
     left:0;
     z-index: 0;
   }
+}
+
+.gm-style-iw a {
+  color: skin-color(accent);
 }
