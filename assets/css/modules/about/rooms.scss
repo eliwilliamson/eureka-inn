@@ -8,5 +8,17 @@
   }
   .bx-controls-direction a {
     margin-bottom: 0;
+
+    @media (max-width:767px) {
+      margin-top: calc(60vh + 78px);
+
+      &.bx-prev:after {
+        float: right;
+      }
+
+      &.bx-next:after {
+        float: left;
+      }
+    }
   }
 }
