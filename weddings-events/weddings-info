@@ -1,0 +1,12 @@
+#weddings-hero.block.split-block(data-edit='false')
+  // Left Block
+  .sblock.sblock-left.bg-cover.hidden-xs(style='background:url(images/covers/cover7.jpg)center center', data-edit='false', data-editor='field', data-field='style[Background Style]')
+  // /Left Block
+  // Right Block
+  .sblock.sblock-right.padx-50.pady-100.align-center.auto-invert
+    i.fs-400.lc-heart.mgb-30.fg-accent(data-edit='false', data-editor='icon')
+    h2.case-u.font-cond-b.fg-text-d.lts-sm(contenteditable='false') Let love shine 
+    p.lts-sm.fg-text(contenteditable='false')
+      | Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+    a.btn.btn-sm.btn-primary.btn-inflate.case-u.lts-md.auto-invert(href='/contact.html', data-edit='false', data-editor='field', data-field='html[Button Text]; href[Button url]') Get a Quote
+  // /Right Block

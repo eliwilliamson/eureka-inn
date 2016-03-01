@@ -277,6 +277,9 @@ pre, code, .container .jumbotron,
     left: 0;
     z-index: 0; }
 
+.gm-style-iw a {
+  color: #E6AF2A; }
+
 /* TYPOGRAPHY
 ----------------------------------- */
 body {
@@ -1283,6 +1286,17 @@ ul.row {
     .navbar.navbar-main .navbar-nav > li > .dropdown-menu > li > a {
       font-size: 11px;
       padding: 10px 20px; }
+  .navbar.navbar-main .ti-menu,
+  .navbar.navbar-main .ti-close {
+    transition: opacity 0.6s; }
+  .navbar.navbar-main .ti-close {
+    opacity: 0;
+    position: absolute;
+    font-weight: bold; }
+  .navbar.navbar-main .show-close .ti-menu {
+    opacity: 0; }
+  .navbar.navbar-main .show-close .ti-close {
+    opacity: 1; }
   @media (max-width: 767px) {
     .navbar.navbar-main {
       padding: 5px 15px; }
@@ -1367,6 +1381,23 @@ ul.row {
   top: 0;
   left: 0;
   width: 100%; }
+
+.nav-light-left .logo {
+  transition: opacity 1s; }
+  .nav-light-left .logo.black {
+    position: absolute;
+    top: 0; }
+  @media (min-width: 768px) {
+    .nav-light-left .logo.white {
+      opacity: 1; }
+    .nav-light-left .logo.black {
+      opacity: 0; } }
+
+@media (min-width: 768px) {
+  .nav-light-left.bg-white .logo.white {
+    opacity: 0; }
+  .nav-light-left.bg-white .logo.black {
+    opacity: 1; } }
 
 /* =======================================================
    3. COMMON
@@ -2450,40 +2481,40 @@ html.swipebox-html.swipebox-touch {
   background-size: cover !important; }
 
 .cover-1 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover1.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover1.jpg") no-repeat center center; }
 
 .cover-2 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover2.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover2.jpg") no-repeat center center; }
 
 .cover-3 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover3.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover3.jpg") no-repeat center center; }
 
 .cover-4 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover4.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover4.jpg") no-repeat center center; }
 
 .cover-5 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover5.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover5.jpg") no-repeat center center; }
 
 .cover-6 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover6.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover6.jpg") no-repeat center center; }
 
 .cover-7 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover7.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover7.jpg") no-repeat center center; }
 
 .cover-8 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover8.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover8.jpg") no-repeat center center; }
 
 .cover-9 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover9.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover9.jpg") no-repeat center center; }
 
 .cover-10 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover10.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover10.jpg") no-repeat center center; }
 
 .cover-11 {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/cover11.jpg") no-repeat center center; }
+  background: url("../../images/covers/cover11.jpg") no-repeat center center; }
 
 .cover-map {
-  background: url("http://eliwilliamson.github.io/eureka-inn/images/covers/map.jpg") no-repeat center center; }
+  background: url("../../images/covers/map.jpg") no-repeat center center; }
 
 /* OVERLAYS
 ------------------------------------ */
@@ -3119,6 +3150,9 @@ html.swipebox-html.swipebox-touch {
 .pad-60, .pad-60-all > * {
   padding: 60px; }
 
+.padb-0, .padb-0-all > * {
+  padding-bottom: 0px; }
+
 .padb-10, .padb-10-all > * {
   padding-bottom: 10px; }
 
@@ -3131,8 +3165,24 @@ html.swipebox-html.swipebox-touch {
 .padb-30, .padb-30-all > * {
   padding-bottom: 30px; }
 
+.padb-50, .padb-50-all > * {
+  padding-bottom: 50px; }
+
+.padb-80, .padb-80-all > * {
+  padding-bottom: 80px; }
+
+.padb-95, .padb-95-all > * {
+  padding-bottom: 95px; }
+
 .padb-100, .padb-100-all > * {
   padding-bottom: 100px; }
+
+.padb-110, .padb-110-all > * {
+  padding-bottom: 110px; }
+
+.pady-0, .pady-0-all > *, .pady-0-links > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 .pady-10, .pady-10-all > *, .pady-10-links > li > a {
   padding-top: 10px;
@@ -3219,6 +3269,9 @@ html.swipebox-html.swipebox-touch {
     padding: 20px; }
   .pad-30-xs, .pad-30-all-xs > * {
     padding: 30px; }
+  .pady-0-xs, .pady-0-all-xs > * {
+    padding-top: 0px;
+    padding-bottom: 0px; }
   .pady-10-xs, .pady-10-all-xs > * {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -3246,6 +3299,12 @@ html.swipebox-html.swipebox-touch {
   .pady-100-xs, .pady-100-all-xs > * {
     padding-top: 100px;
     padding-bottom: 100px; }
+  .padx-10-xs, .padx-10-all-xs > * {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .padx-20-xs, .padx-20-all-xs > * {
+    padding-right: 20px;
+    padding-left: 20px; }
   .padx-30-xs, .padx-30-all-xs > * {
     padding-right: 30px;
     padding-left: 30px; } }
@@ -3632,13 +3691,14 @@ html.swipebox-html.swipebox-touch {
    8. Pages
 ========================================================== */
 #home-hero {
+  background-color: #798d80;
   height: 100vh; }
   #home-hero .logo {
     height: 200px;
     height: 40vh;
     width: auto; }
 
-.navbar-fixed.inverse .logo {
+.navbar-fixed.nav-light.inverse .logo {
   opacity: 0;
   transition: opacity 1s; }
 
@@ -3669,8 +3729,20 @@ html.swipebox-html.swipebox-touch {
 
 #rooms .bx-controls-direction a {
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    #rooms .bx-controls-direction a {
+      margin-top: calc(60vh + 78px); }
+      #rooms .bx-controls-direction a.bx-prev:after {
+        float: right; }
+      #rooms .bx-controls-direction a.bx-next:after {
+        float: left; } }
 
 #food {
   background-size: 59%;
   background-repeat: no-repeat;
   background-position: -36% -21%; }
+  @media (max-width: 767px) {
+    #food {
+      background-position: center -21%; }
+      #food .img-col {
+        display: none; } }

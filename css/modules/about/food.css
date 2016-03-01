@@ -2,3 +2,8 @@
   background-size: 59%;
   background-repeat: no-repeat;
   background-position: -36% -21%; }
+  @media (max-width: 767px) {
+    #food {
+      background-position: center -21%; }
+      #food .img-col {
+        display: none; } }

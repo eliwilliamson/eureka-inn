@@ -7,3 +7,10 @@
 
 #rooms .bx-controls-direction a {
   margin-bottom: 0; }
+  @media (max-width: 767px) {
+    #rooms .bx-controls-direction a {
+      margin-top: calc(60vh + 78px); }
+      #rooms .bx-controls-direction a.bx-prev:after {
+        float: right; }
+      #rooms .bx-controls-direction a.bx-next:after {
+        float: left; } }

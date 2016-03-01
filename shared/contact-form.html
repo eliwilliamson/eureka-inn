@@ -1,0 +1,35 @@
+
+<div id="contact">
+  <div class="container container-main auto-invert pady-block-lg">
+    <div class="section-title auto-invert line-b align-center">
+      <h2 class="font-cond-b fg-text-d lts-sm">Come experience history.</h2>
+      <p class="font-cond-l lts-sm">Blake and Katelyn are standing by to recieve your inquiry. Service never ceases to smile.</p>
+    </div>
+    <form id="contact-form" action="email.php" class="contact-form">
+      <div class="alert alert-success alert-sent hidden"><b>Terrific!</b>Your message has been sent.</div>
+      <div class="alert alert-danger alert-failed hidden"><b>Uh Oh!</b>There was an error and your message not sent. Please try again or give us a call at (423) 913-6100.</div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <input name="name" placeholder="Full Name" required="" type="text" class="form-control"/><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+          </div>
+          <div class="form-group">
+            <input name="number" placeholder="Phone Number" type="text" class="form-control"/><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+          </div>
+          <div class="form-group">
+            <input name="email" placeholder="Email Address" data-error="Enter valid email address" required="" type="email" class="form-control"/><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+          </div>
+          <div class="form-group">
+            <input name="subject" placeholder="Subject" required="" type="text" class="form-control"/><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group message-box bg-white">
+            <textarea name="message" placeholder="How can we help?" required="" class="form-control"></textarea><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+            <button id="send-message" class="btn btn-primary case-u lts-sm">Send message</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
