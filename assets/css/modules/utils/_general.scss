@@ -34,6 +34,7 @@
 @media (max-width:767px) {
   .block-xs { display:block}
   .hcenter-xs { margin-left:auto !important; margin-right:auto !important}
+  .bg-fixed { background-attachment: initial !important;}
 }
 
 .fg-inherit {color: inherit}
