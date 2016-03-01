@@ -3,6 +3,7 @@
 .btn, [class*="btn-"]  {
   border:1px solid rgba(#000, 0.07);
   color:#fff;
+  font-weight: bold;
 
   &:hover, &:focus, &:active, &:active:focus {
     background-image: linear-gradient(to bottom, rgba(#fff, 0.1) 1%, rgba(#fff, 0.1) 100%);
