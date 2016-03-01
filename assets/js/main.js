@@ -174,6 +174,10 @@ $().ready(function() {
     }
   });
 
+  $("body").on('click', '[data-toggle="collapse"]', function (e) {
+    $(this).toggleClass("show-close");
+  });
+
   // SCROLLER
   // ----------------------------------------
   $("body").on("click", "[data-scroll='true']", function(e) {
@@ -187,6 +191,7 @@ $().ready(function() {
       //alert("The link [" + target + "] cannot be found!\n\nMake sure your links are pointing to the correct blocks")
     }
   });
+
 
   // CONTACT FORM
   // ----------------------------------------
