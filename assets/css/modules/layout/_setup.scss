@@ -33,7 +33,7 @@ body, html {
   > * {
     width:25%;
   }
-  
+
   > .title, .divider {
     width:100%;
   }
@@ -42,7 +42,7 @@ body, html {
   > * {
     width:20%;
   }
-  
+
   > .title, .divider {
     width:100%;
   }
@@ -59,27 +59,27 @@ ul.row {
   > [class^="col-"] {
     margin-bottom: 30px;
   }
-  
+
   &.gutter-0 > [class^="col-"]{
     margin-bottom:0;
   }
-  
+
   &.gutter-4 > [class^="col-"]{
     margin-bottom:4px;
   }
-  
+
   &.gutter-2 > [class^="col-"]{
     margin-bottom:2px;
   }
-  
+
   &.gutter-10 > [class^="col-"]{
     margin-bottom:10px;
   }
-  
+
   &.gutter-20 > [class^="col-"]{
     margin-bottom:20px;
   }
-  
+
   &.gutter-60 > [class^="col-"]{
     margin-bottom:60px;
   }
@@ -129,7 +129,7 @@ ul.row {
 }
 
 .gutter-60.container {
-  
+
 }
 .gutter-60.row {
   margin-right: -30px;
@@ -146,7 +146,7 @@ ul.row {
   list-style:none;
   padding:0;
   margin:0;
-  
+
   > li {
     display:block;
   }
@@ -159,29 +159,29 @@ ul.row {
     table-layout:fixed;
     width:100%;
     margin:0;
-    
+
     > [class*="col-"] {
       display:table-cell;
       height:100%;
       float:none;
     }
-    
+
     .col-vtop {
       vertical-align:top;
     }
-    
+
     .col-vmid {
       vertical-align:middle;
     }
-    
+
     .col-vbot {
       vertical-align:bottom;
     }
-    
+
     > div:first-child,  {
       padding-left:0;
     }
-    
+
     > div:last-child {
       padding-right:0;
     }
@@ -196,13 +196,13 @@ ul.row {
   padding:0;
   margin:0;
   width: 100%;
-  
+
   > li {
     display: table-cell;
     vertical-align: top;
     border-right:1px solid rgba(#000, 0.2);
   }
-  
+
   &.pad-y > li {
     padding-top:2em;
     padding-bottom:2em;
@@ -222,7 +222,7 @@ ul.row {
   > li:nth-child(3n) {
     border-right: none;
   }
-  
+
   @media (max-width:767px) {
     display:block;
     width:auto;
@@ -249,7 +249,7 @@ ul.row {
   display:block;
   padding:0;
   margin:0 auto;
-  
+
   > li {
     display:block;
     float: left;
@@ -281,7 +281,7 @@ ul.row {
         border-bottom: none;
       }
     }
-  } 
+  }
 
   .hash-list.cols-4 {
     > li {
@@ -306,7 +306,7 @@ ul.row {
         border-bottom: none;
       }
     }
-  } 
+  }
 }
 
 @media (max-width:767px) {
@@ -338,7 +338,7 @@ ul.row {
   margin:0;
   padding: $pad/2;
   list-style:none;
-  
+
   li {
     display:block;
     float:left;
@@ -346,14 +346,14 @@ ul.row {
     height:50%;
     padding: $pad;
   }
-  
+
   a {
     display:block;
     width:100%;
     height:100%;
     position:relative;
     @include vendorize(background-size, "cover !important");
-    
+
     > div {
       position:absolute;
       top:0;
@@ -373,7 +373,7 @@ ul.row {
     span {
       display:block;
     }
-    
+
     &:hover > div {
       opacity: 1;
     }

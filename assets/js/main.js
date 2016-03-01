@@ -192,6 +192,12 @@ $().ready(function() {
     }
   });
 
+  // AMENTITIES GRID FIX
+  // ----------------------------------------
+  $(function() {
+      $('#amentities .hash-list li').matchHeight();
+  });
+
 
   // CONTACT FORM
   // ----------------------------------------

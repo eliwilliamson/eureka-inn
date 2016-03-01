@@ -86,6 +86,10 @@
   @media (max-width:767px) {
     padding:5px 15px;
 
+    .logo {
+      padding: 5px 0;
+    }
+
     .navbar-collapse {
       border: none !important;
     }
@@ -248,13 +252,11 @@
 
   &.bg-white {
     .logo {
-      @media (min-width:768px) {
-        &.white {
-          opacity: 0;
-        }
-        &.black {
-          opacity: 1;
-        }
+      &.white {
+        opacity: 0;
+      }
+      &.black {
+        opacity: 1;
       }
     }
   }

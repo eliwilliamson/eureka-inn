@@ -1,5 +1,12 @@
 /* UTILITY CLASSES
 ---------------------------------- */
+hr.gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  margin-top: 0;
+}
+
 .clear{clear:both!important;visibility: hidden;display: block; height:0}
 .clearfix:before, .clearfix:after { content: '\0020';display: block;overflow: hidden;visibility: hidden;height:0}
 .clearfix:after { clear: both; }
