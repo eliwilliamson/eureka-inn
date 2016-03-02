@@ -14,7 +14,7 @@
     margin:0 0 1.5em 0;
   }
 
-  p {
+  p:not(.mgb-0) {
     line-height:1.7em;
     margin-bottom: 1em;
   }
@@ -29,11 +29,6 @@
     color: #fff;
     border:1px solid #fff;
     z-index: $z-controls;
-  }
-
-  > .container {
-    padding-top:80px;
-    padding-bottom:80px;
   }
 
   .footer-bottom {
