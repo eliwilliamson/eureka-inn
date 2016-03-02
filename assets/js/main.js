@@ -68,7 +68,7 @@ function showPageLoader() {
 }
 function hidePageLoader() {
   $('.page-loader .anim').fadeOut();
-  $('.page-loader').delay(350).fadeOut();
+  $('.page-loader').delay(550).fadeOut();
 }
 
 // HERO
