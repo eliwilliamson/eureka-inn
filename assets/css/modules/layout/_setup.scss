@@ -379,3 +379,11 @@ ul.row {
     }
   }
 }
+
+/* BOOTSTRAP FIXES
+------------------------------------ */
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
