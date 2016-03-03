@@ -233,7 +233,8 @@
   width:100%;
 }
 
-.nav-light-left {
+.nav-light-left,
+.nav-light:not(.nav-home) {
 
   .logo {
     transition: opacity 1s;
