@@ -206,12 +206,16 @@ $().ready(function() {
   function sendMessage(formData) {
     $.ajax({
         type: "POST",
-        url: "email.php",
+        url: "//formspree.io/eliwilliamson@gmail.com",
         data: formData,
+        dataType: "json",
         success : function(text){
           $("#contact-form .alert").fadeOut();
           $("#contact-form .alert-sent").removeClass("hidden").fadeIn();
+          $(".message-box > .form-control").blur();
           $("#contact-form")[0].reset();
+          $(".form-group").removeClass('has-success');
+          $(".form-control-feedback").removeClass('glyphicon-ok');
         },
         error : function(error) {
           console.log(error);
