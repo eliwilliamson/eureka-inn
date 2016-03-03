@@ -130,6 +130,7 @@ function setupNav(target) {
 $(window).load(function() {
   hidePageLoader();
 
+  FastClick.attach(document.body);
 
   /**
   * Self calling functionality
