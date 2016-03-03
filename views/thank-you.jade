@@ -2,7 +2,9 @@ extends light-layout
 
 block content
 
-  - var page = "Thank You"
+  - var page      = "Thank You"
+  - var introText = "You have successfully submitted a message"
+  - var headline  = "Thank You! We'll be in touch soon!"
 
-  include shared/thanks-message
+  include shared/generic-message
   include shared/testimonial-cta
