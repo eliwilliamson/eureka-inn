@@ -4,6 +4,10 @@
   background-position: -36% -21%; }
   @media (max-width: 767px) {
     #food {
-      background-position: center -21%; }
+      background-position: center -21%;
+      text-align: center; }
       #food .img-col {
         display: none; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    #food {
+      background-image: none !important; } }
