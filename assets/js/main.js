@@ -74,8 +74,8 @@ function hidePageLoader() {
 
 // HERO
 // ---------------------------------
-$('#arc-top').arctext({radius: 100});
-$('#arc-bottom').arctext({radius: 100, dir: -1});
+$('#arc-top').arctext({radius: 200});
+$('#arc-bottom').arctext({radius: 400, dir: -1});
 
 // NAV
 // ---------------------------------
