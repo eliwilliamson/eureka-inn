@@ -3,7 +3,7 @@
 $font-size: 14px;
 $font-size-xs: 12px;
 $line-h: 1.7;
-$img-dir: "../../images/";
+$img-dir: "/images/";
 $z-overlay:0;
 $z-content:100;
 $z-modals:1000;
@@ -12,8 +12,8 @@ $z-apex:10000;
 $z-nav: 300;
 $nav-h: 80px;
 $nav-h-xs: 60px;
-$font-reg: map-get($fonts, roboto);
-$font-cond: map-get($fonts, roboto-cond);
+$font-reg: map-get($fonts, pt-serif);
+$font-cond: map-get($fonts, pt-serif);
 $title-font: $font-cond;
 $body-font: $font-reg;
 
