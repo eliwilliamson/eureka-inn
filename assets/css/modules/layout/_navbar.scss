@@ -106,7 +106,7 @@
      }
     }
     .navbar-nav {
-      background: white;
+      background: skin-color(cream);
       padding:0;
       margin:0 0 15px 0;
 
@@ -118,7 +118,7 @@
           &.btn-accent {
             background-color: skin-color(accent);
             border-bottom: none;
-            color: white;
+            color: skin-color(cream);
           }
         }
 
@@ -128,10 +128,10 @@
 
         &:hover > a, &.active > a, a:focus {
           background:rgba(#000, 0.85);
-          color: white;
+          color: skin-color(cream);
 
           &.btn-accent {
-            background-image: linear-gradient(to bottom, rgba(#fff, 0.1) 1%, rgba(#fff, 0.1) 100%);
+            background-image: linear-gradient(to bottom, rgba(skin-color(cream), 0.1) 1%, rgba(skin-color(cream), 0.1) 100%);
           }
         }
       }
@@ -141,12 +141,12 @@
       padding:0;
       > li > a {
         background: #111;
-        color: #fff;
-        border-bottom:1px dotted rgba(#fff, 0.1);
+        color: skin-color(cream);
+        border-bottom:1px dotted rgba(skin-color(cream), 0.1);
       }
       > li:hover > a, li.active > a {
         background: #666;
-        color: #fff;
+        color: skin-color(cream);
       }
     }
   }
@@ -161,23 +161,23 @@
   }
 }
 .navbar-main.inverse {
-  color: #fff;
+  color: skin-color(cream);
 
   &.border-b {
-    border-bottom:1px solid rgba(#fff, 0.2);
+    border-bottom:1px solid rgba(skin-color(cream), 0.2);
   }
 
   &.border-all {
-    border:1px solid rgba(#fff, 0.2);
+    border:1px solid rgba(skin-color(cream), 0.2);
   }
 
   .navbar-brand, .navbar-toggle-link {
-    color: #fff;
+    color: skin-color(cream);
   }
 
   .navbar-nav {
     > li > a {
-      color: #fff;
+      color: skin-color(cream);
     }
     > li {
       &:hover, &.active {
@@ -193,11 +193,11 @@
   @media (max-width:767px) {
     .navbar-nav,
     .nav {
-      background: white;
+      background: skin-color(cream);
 
       > li {
         > a {
-          background:white;
+          background:skin-color(cream);
           color: skin-color(text);
           border-bottom:1px dotted rgba(#000, 0.2);
         }
@@ -206,7 +206,7 @@
         &.active > a,
         a:focus {
           background:rgba(#000, 0.85);
-          color: #fff;
+          color: skin-color(cream);
         }
       }
     }
@@ -215,12 +215,12 @@
       padding:0;
       > li > a {
         background: #111;
-        color: #fff;
-        border-bottom:1px dotted rgba(#fff, 0.1);
+        color: skin-color(cream);
+        border-bottom:1px dotted rgba(skin-color(cream), 0.1);
       }
       > li:hover > a, li.active > a {
         background: #666;
-        color: #fff;
+        color: skin-color(cream);
       }
     }
   }

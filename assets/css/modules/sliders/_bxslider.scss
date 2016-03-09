@@ -10,13 +10,13 @@
   position: relative;
   z-index: $z-content;
   *zoom: 1;
-  
+
   img {
     max-width: 100%;
     display: block;
     line-height: 1;
   }
-  
+
   .bx-loading {
     background: #fff;
     height: 100%;
@@ -28,7 +28,7 @@
   }
 }
 
-/* LAYERS 
+/* LAYERS
 ---------------------------------------*/
 .bx-wrapper {
   .bx-layer {
@@ -47,7 +47,7 @@
     width:100%;
   }
 
-  .bx-controls-direction { 
+  .bx-controls-direction {
     a {
       font-family: 'themify';
       text-align:center;
@@ -62,15 +62,15 @@
       color: skin-color(text);
       z-index: $z-controls;
 
-      &.bx-next { 
+      &.bx-next {
         left: 20px;
         &:after {
           font-family: "themify";
           content: '\e64a';
         }
       }
-      
-      &.bx-prev { 
+
+      &.bx-prev {
         right: 20px;
         &:after {
           font-family: "themify";
@@ -96,18 +96,18 @@
   z-index: getvar(z-layers controls);
   text-align:center;
   height: 15px;
-  
+
   .bx-pager-item {
     display: inline-block;
     margin:0 4px;
-    
+
     a {
       display:block;
       width: 15px;
       height: 15px;
-      background: rgba(#000, 0.5);
+      background: rgba(#E8E3D8, 0.5);
       border-radius: 50%;
-      
+
       &.active, &:hover{
         background: skin-color(accent);
       }
@@ -124,8 +124,8 @@
 }
 
 .inverse-all .auto-invert .bx-wrapper .bx-pager .bx-pager-tem a{
-  background: rgba(#fff, 0.5); 
-  
+  background: rgba(#fff, 0.5);
+
   &.active, &:hover{
     background: skin-color(accent);
   }
