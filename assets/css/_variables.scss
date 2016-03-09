@@ -12,14 +12,16 @@ $z-apex:10000;
 $z-nav: 300;
 $nav-h: 80px;
 $nav-h-xs: 60px;
-$font-reg: map-get($fonts, pt-serif);
-$font-cond: map-get($fonts, pt-serif);
-$title-font: $font-cond;
-$body-font: $font-reg;
+$font-serif: map-get($fonts, pt-serif);
+$font-sans-serif: map-get($fonts, roboto-cond);
+$font-sans-serif-lg: map-get($fonts, roboto);
+$title-font: $font-serif;
+$body-font: $font-sans-serif;
 
 $font-classes:(
-  font-reg: $font-reg,
-  font-cond: $font-cond,
+  font-sans-serif: $font-sans-serif,
+  font-sans-serif-lg: $font-sans-serif-lg,
+  font-serif: $font-serif,
 );
 
 $overlays:(
