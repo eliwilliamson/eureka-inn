@@ -1,9 +1,4 @@
 .grain {
-  // display: block;
-  // height: 600px;
-  // position: relative;
-  // width: 600px;
-  // overflow: hidden;
   & > * {
     z-index: 2;
 
@@ -74,12 +69,6 @@
     -webkit-transform: translate(0%, 15%);
     transform: translate(0%, 15%);
   }
-  80% {
-    -moz-transform: translate(3%, 35%);
-    -ms-transform: translate(3%, 35%);
-    -webkit-transform: translate(3%, 35%);
-    transform: translate(3%, 35%);
-  }
   90% {
     -moz-transform: translate(-10%, 10%);
     -ms-transform: translate(-10%, 10%);
@@ -135,12 +124,6 @@
     -ms-transform: translate(0%, 15%);
     -webkit-transform: translate(0%, 15%);
     transform: translate(0%, 15%);
-  }
-  80% {
-    -moz-transform: translate(3%, 35%);
-    -ms-transform: translate(3%, 35%);
-    -webkit-transform: translate(3%, 35%);
-    transform: translate(3%, 35%);
   }
   90% {
     -moz-transform: translate(-10%, 10%);
@@ -198,12 +181,6 @@
     -webkit-transform: translate(0%, 15%);
     transform: translate(0%, 15%);
   }
-  80% {
-    -moz-transform: translate(3%, 35%);
-    -ms-transform: translate(3%, 35%);
-    -webkit-transform: translate(3%, 35%);
-    transform: translate(3%, 35%);
-  }
   90% {
     -moz-transform: translate(-10%, 10%);
     -ms-transform: translate(-10%, 10%);
@@ -259,12 +236,6 @@
     -ms-transform: translate(0%, 15%);
     -webkit-transform: translate(0%, 15%);
     transform: translate(0%, 15%);
-  }
-  80% {
-    -moz-transform: translate(3%, 35%);
-    -ms-transform: translate(3%, 35%);
-    -webkit-transform: translate(3%, 35%);
-    transform: translate(3%, 35%);
   }
   90% {
     -moz-transform: translate(-10%, 10%);
