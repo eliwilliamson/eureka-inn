@@ -42,6 +42,16 @@
   .social-links {
     font-size:1.2em;
   }
+
+  .right-part a {
+    color: white;
+    text-decoration: none;
+    transition: color .1s linear;
+
+    &:hover {
+      color: skin-color(accent);
+    }
+  }
 }
 
 .footer .hash-list, .footer .hash-cells {
