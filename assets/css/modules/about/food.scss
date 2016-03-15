@@ -1,18 +1,37 @@
 #food {
-  background-size: 59%;
-  background-repeat: no-repeat;
-  background-position: -36% -21%;
 
-  @media (max-width:767px) {
-    background-position: center -21%;
-    text-align: center;
+  .img-col {
 
-    .img-col {
-      display: none;
+    @media (max-width:480px) {
+      padding-top: 20px;
     }
-  }
 
-  @media (min-width:480px) and (max-width:767px) {
-    background-image: none !important;
+    img {
+      width: 120%;
+      height: auto;
+      position: relative;
+      left: -20%;
+      top: -35px;
+      margin-bottom: -110px;
+
+      @media (max-width:1185px) {
+        width: 140%;
+        left: -40%;
+        top: -10px;
+        margin-bottom: -70px;
+      }
+
+      @media (max-width:767px) {
+        margin-bottom: 20px;
+        position: static;
+        width: 50%;
+        left: auto;
+        margin-top: -250px;
+      }
+
+      @media (max-width:480px) {
+        display: none;
+      }
+    }
   }
 }
