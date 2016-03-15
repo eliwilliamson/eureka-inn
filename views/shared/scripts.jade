@@ -10,8 +10,9 @@ script(src='/js/fastclick.js')
 script(src='/js/main.js')
 
 //- CONTACT MAP
-script(src='/js/google.maps.api.v3.js')
-script(src='/js/map.js')
+if page == "Contact Us"
+  script(src='/js/google.maps.api.v3.js')
+  script(src='/js/map.js')
 
 //- DYNAMIC TITLE FIX
 title= page + " | " + company
