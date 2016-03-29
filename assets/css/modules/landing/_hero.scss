@@ -26,6 +26,15 @@
   }
 }
 
+.photo-cred {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: .7em;
+  font-style: italic;
+  color: rgba(white,0.2);
+}
+
 .navbar-fixed {
 
 	&.nav-home.inverse .logo {
