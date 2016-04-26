@@ -67,7 +67,6 @@ function showPageLoader() {
   $('.page-loader .anim').show();
 }
 function hidePageLoader() {
-  $('.spacer').hide();
   $('.page-loader .anim').fadeOut();
   $('.page-loader').delay(550).fadeOut();
 }
