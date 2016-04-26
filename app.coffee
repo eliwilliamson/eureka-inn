@@ -4,6 +4,7 @@ sass            = require 'node-sass'
 autoprefixer    = require 'autoprefixer-stylus'
 js_pipeline     = require 'js-pipeline'
 css_pipeline    = require 'css-pipeline'
+image_pipeline  = require 'roots-image-pipeline'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
@@ -16,6 +17,11 @@ module.exports =
     css_pipeline(
       files: 'assets/css/*.scss',
       minify: true
+    ),
+    image_pipeline(
+      files: 'assets/images/**',
+      out: 'images',
+      compress: true
     )
   ]
 
