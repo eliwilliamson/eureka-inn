@@ -19,7 +19,7 @@ module.exports =
       minify: true
     ),
     image_pipeline(
-      files: 'assets/images/**',
+      files: 'assets/images/**/*',
       out: 'images',
       compress: true
     )
