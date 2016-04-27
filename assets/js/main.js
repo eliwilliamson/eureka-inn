@@ -205,7 +205,7 @@ $().ready(function() {
   function sendMessage(formData) {
     $.ajax({
         type: "POST",
-        url: "//formspree.io/eliwilliamson@gmail.com",
+        url: "https://formspree.io/historiceurekainn@gmail.com",
         data: formData,
         dataType: "json",
         success : function(text){
