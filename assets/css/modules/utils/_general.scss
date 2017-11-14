@@ -479,3 +479,21 @@ $pads-x-xs: 10 20 30;
 /* COLOR CLASSES
 ----------------------------------- */
 @include print-skin();
+
+
+/* TESTIMONIALS
+----------------------------------- */
+.blakat img {
+  @media (min-width:768px) {
+    height: 50%;
+    width: auto;
+    max-width: 10000px;
+    float: right;
+  }
+  @media (min-width:960px) {
+    height: 70%;
+  }
+  @media (min-width:1200px) {
+    height: 100%;
+  }
+}
